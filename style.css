@@ -1,0 +1,22 @@
+p,
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+
+legend {
+    font-weight: bold;
+    font:  1.5rem 'Fira Sans', sans-serif;
+}
+
+
+.vertical-center {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    margin-top: 20px;
+}

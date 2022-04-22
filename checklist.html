@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Чеклист по тестированию</title>
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <script src="controller.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<fieldset>
+    <legend>Чек лист по тестированию веб-приложения:</legend>
+
+    <div>
+        <input type="checkbox" id="https" name="https">
+        <label for="https">Https протокол</label>
+    </div>
+    <div>
+        <input type="checkbox" id="virus" name="virus">
+        <label for="virus">Отсутствие вирусов</label>
+    </div>
+    <hr>
+    <div>
+        <input type="checkbox" id="speed" name="speed">
+        <label for="speed">Скорость отклика не больше 3 сек (в идеале не больше 0.5 сек)</label>
+    </div>
+    <div>
+        <input type="checkbox" id="size" name="size">
+        <label for="size">Размер страницы не больше 3 мб (в идеале не больше 1.5мб)</label>
+    </div>
+    <div>
+        <input type="checkbox" id="request" name="request">
+        <label for="request">Количество сетевых запросов до 100</label>
+    </div>
+    <div>
+        <input type="checkbox" id="js" name="js">
+        <label for="js">JS компонента внизу страницы</label>
+    </div>
+    <hr>
+    <div>
+        <input type="checkbox" id="local" name="local">
+        <label for="local">Локализация</label>
+    </div>
+    <hr>
+    <div>
+        <input type="checkbox" id="outer" name="outer">
+        <label for="outer">Количество внешних ссылок от 500</label>
+    </div>
+    <div>
+        <input type="checkbox" id="inner" name="inner">
+        <label for="inner">Количество внутренних ссылок от 100</label>
+    </div>
+    <hr>
+    <div>
+        <input type="checkbox" id="mobile" name="mobile">
+        <label for="mobile">Мобильность</label>
+    </div>
+    <div>
+        <input type="checkbox" id="connect" name="connect">
+        <label for="connect">Совместимость</label>
+    </div>
+    <hr>
+    <div>
+        <input type="checkbox" id="func" name="func">
+        <label for="func">Функциональность всех элементов (кнопки, ссылки и т.д.)</label>
+    </div>
+
+</fieldset>
+    <div class="vertical-center" onclick="submit()">
+        <button>Оценить</button>
+    </div>
+</body>
+</html>
